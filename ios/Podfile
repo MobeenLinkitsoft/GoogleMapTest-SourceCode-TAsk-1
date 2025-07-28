@@ -1,3 +1,5 @@
+
+
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
@@ -15,6 +17,11 @@ if linkage != nil
 end
 
 target 'test' do
+
+  pod 'GoogleMaps', '~> 7.0'
+  pod 'GooglePlaces', '~> 7.0'
+  
+ 
   config = use_native_modules!
 
   use_react_native!(
