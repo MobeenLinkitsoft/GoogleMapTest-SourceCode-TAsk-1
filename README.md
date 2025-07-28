@@ -14,11 +14,12 @@ This app implements real-time navigation using Google Maps SDK.
 1. Clone this repository
 2. Install dependencies:
   
-   npm install
+   yarn install
 
 ## For Android:
 
 Make sure you have Android Studio installed
 
 on terminal
-- npx react-native run-android
+- yarn android
+- yarn ios
